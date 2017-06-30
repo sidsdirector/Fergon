@@ -1,0 +1,4112 @@
+<!doctype html>   
+
+<html lang="ES">
+
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Proyecto Registro PAE</title>
+
+		<!--[if lt IE 9]>
+      		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+    	<!--Llamamos al archivo css a través de CDN-->
+
+    	<link rel="stylesheet" href="css/style.css">
+
+		<!--Llamamos al archivo Font Awesome CDN-->
+    	<script src="https://use.fontawesome.com/bb6d0f8827.js"></script>
+
+    	<!-- JQuery CDN-->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    	
+	</head>
+
+	<body>
+	
+		<div class="container formulario">
+
+			<div class="row">
+				  <div id="c1">
+				  		<img src="img/logo PAE.png" alt="Logo mineducación" title="Logo mineducación">
+				  </div>
+			</div>
+		
+			<div class="row">
+				
+				<form>
+
+					<div class="row" id="mostrar">
+
+						<div class="form-group col-md-12">						
+							<label><abbr title="Institución Educativa">IE:</abbr></label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-map-pin fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text" placeholder="Ingrese la Institución Educativa" name="IE" id="ingreso">
+							</div>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="llenar()">Ingrese la IE</a>
+
+						<div class="form-group col-md-12">						
+							<label>Institución Educativa:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      		
+						      		<select class="form-control" id="ie">
+										<option>--Seleccionar--</option>
+										<option>ARTURO GOMEZ JARAMILLO</option>
+										<option>JOHN F. KENNEDY</option>
+										<option>RODRIGO LLOREDA CAICEDO</option>
+										<option>INMACULADA CONCEPCION</option>
+										<option>MERCEDES ABREGO</option>
+										<option>PANEBIANCO AMERICANO</option>
+										<option>QUEBRADAGRANDE</option>
+										<option>SAN PEDRO CLAVER</option>
+										<option>TEODORO MUNERA HINCAPIE</option>
+										<option>CEILAN</option>
+										<option>DEL DAGUA</option>
+										<option>TECNICA AGROPECUARIA TORO</option>
+										<option>ABSALON TORRES CAMACHO</option>
+										<option>ACERG</option>
+										<option>AGRICOLA CAMPOALEGRE</option>
+										<option>ALFONSO ZAWADZKY</option>
+										<option>ALFREDO GARRIDO TOVAR</option>
+										<option>ALFREDO POSADA CORREA</option>
+										<option>ANTONIA SANTOS</option>
+										<option>ANTONIO JOSE DE SUCRE</option>
+										<option>ANTONIO NARIÑO</option>
+										<option>ANTONIOJOSE DE SUCRE</option>
+										<option>ARGEMIRO ESCOBAR CARDONA</option>
+										<option>ATANASIO GIRARDOT</option>
+										<option>ATENEO</option>
+										<option>BELISARIO PEÑA PIÑEIRO</option>
+										<option>BENJAMIN HERRERA</option>
+										<option>BETANIA</option>
+										<option>BOLIVARIANO</option>
+										<option>BORRERO AYERBE</option>
+										<option>CAMILO TORRES</option>
+										<option>CARLOS HOLGUIN SARDI</option>
+										<option>CIUDAD FLORIDA</option>
+										<option>CRISTOBAL COLON</option>
+										<option>DE DESARROLLO RURAL LA SELVA</option>
+										<option>DIEGO RENGIFO SALAZAR</option>
+										<option>DOCE DE OCTUBRE</option>
+										<option>EFRAIN VARELA VACA</option>
+										<option>EL AGUILA</option>
+										<option>EL PALMAR</option>
+										<option>EL PLACER</option>
+										<option>EL QUEREMAL</option>
+										<option>ELEAZAR LIBREROS SALAMANCA</option>
+										<option>ESCUELA NORMAL SUPERIOR MIGUEL DE CERVANTES SAAVEDRA</option>
+										<option>FRANCISCO ANTONIO ZEA</option>
+										<option>FRANCISCO DE PAULA SANTANDER</option>
+										<option>FRAY JOSE JOAQUIN ESCOBAR</option>
+										<option>GABRIELA MISTRAL</option>
+										<option>GENERAL SANTANDER</option>
+										<option>GILBERTO ALZATE AVENDAÑO</option>
+										<option>GILBERTO ALZATE AVENDAÑO.</option>
+										<option>GIMNASIO DEL CALIMA</option>
+										<option>GINEBRA LA SALLE</option>
+										<option>GUILLERMO VALENCIA</option>
+										<option>HERACLIO URIBE URIBE</option>
+										<option>HERNANDO BORRERO CUADROS</option>
+										<option>HERNANDO LLORENTE ARROYO</option>
+										<option>INMACULADA CONCEPCION</option>
+										<option>JORGE  ISAACS</option>
+										<option>JORGE  ISAACS EL PLACER</option>
+										<option>JORGE ELIECER GAITAN</option>
+										<option>JORGE ISAACS</option>
+										<option>JORGE ROBLEDO</option>
+										<option>JOSE ACEVEDO Y GOMEZ</option>
+										<option>JOSE ANTONIO AGUILERA</option>
+										<option>JOSE CELESTINO MUTIS</option>
+										<option>JOSE FELIX RESTREPO</option>
+										<option>JOSE IGNACIO OSPINA</option>
+										<option>JOSE MARIA CORDOBA</option>
+										<option>JOSE MARIA FALLA</option>
+										<option>JUAN DE DIOS GIRON</option>
+										<option>JULIAN TRUJILLO</option>
+										<option>JULIO CAICEDO TELLEZ</option>
+										<option>JULIO FERNANDEZ MEDINA</option>
+										<option>JUSTINIANO ECHAVARRIA</option>
+										<option>LA CONSOLITA</option>
+										<option>LA INMACULADA</option>
+										<option>LA LIBERTAD</option>
+										<option>LA PRESENTACION</option>
+										<option>LA TULIA</option>
+										<option>LAS AMERICAS</option>
+										<option>LUIS GABRIEL UMAÑA MORALES</option>
+										<option>MAGDALENA ORTEGA</option>
+										<option>MANUEL ANTONIO BONILLA</option>
+										<option>MANUEL DOLORES MONDRAGON</option>
+										<option>MANUEL MARIA MALLARINO</option>
+										<option>MANUELA BELTRAN</option>
+										<option>MARCO FIDEL SUAREZ</option>
+										<option>MARIA ANALIA ORTIZ HORMAZA</option>
+										<option>MARIA AUXILIADORA</option>
+										<option>MARIA INMACULADA</option>
+										<option>MARIANO GONZALEZ</option>
+										<option>MARINO RENJIFO SALCEDO</option>
+										<option>MIGUEL ANTONIO CARO</option>
+										<option>NARANJAL</option>
+										<option>NEMESIO RODRIGUEZ ESCOBAR</option>
+										<option>NORMAL SUPERIOR JORGE ISAACS</option>
+										<option>NORMAL SUPERIOR MARIA INMACULADA</option>
+										<option>NORMAL SUPERIOR NUESTRA SEÑORA DE LAS MERCEDEZ</option>
+										<option>NUESTRA SEÑORA DE  LA CANDELARIA</option>
+										<option>NUESTRA SEÑORA DE CHIQUINQUIRA</option>
+										<option>NUESTRA SEÑORA DE LA CONSOLACION</option>
+										<option>NUESTRA SEÑORA DE LA PAZ</option>
+										<option>PABLO VI</option>
+										<option>PEDRO FERMIN DE VARGAS</option>
+										<option>PEDRO VICENTE ABADIA</option>
+										<option>POLICARPA SALAVARRIETA</option>
+										<option>PRIMAVERA</option>
+										<option>PRIMITIVO CRESPO</option>
+										<option>REGIONAL SIMON BOLIVAR</option>
+										<option>RODRIGO LLOREDA CAICEDO</option>
+										<option>SAGRADO CORAZÓN</option>
+										<option>SAGRADO CORAZON DE JESUS</option>
+										<option>SAN ISIDRO</option>
+										<option>SAN JOSE</option>
+										<option>SAN JUAN BOSCO</option>
+										<option>SAN PIO X</option>
+										<option>SANTA ANA DE LOS CABALLEROS</option>
+										<option>SANTA BARBARA</option>
+										<option>SANTA ELENA</option>
+										<option>SANTA INES</option>
+										<option>SANTA MARTA</option>
+										<option>SANTA ROSALIA DE PALERMO</option>
+										<option>SANTA TERESITA</option>
+										<option>SANTA TERESITA DEL NIÑO JESUS</option>
+										<option>SANTIAGO GUTIERREZ ANGEL</option>
+										<option>SEVILLA</option>
+										<option>SIMON BOLIVAR</option>
+										<option>VEINTE DE JULIO</option>
+										<option>MARINO RENGIFO SALCEDO</option>
+									</select>
+
+							<div class="input-group-addon">
+								<span class="badge">130</span></a>					
+						    </div>
+
+						  </div>				    
+						    
+							<small>Seleccione el nombre de la Institución Educativa</small>
+						</div>
+
+						<div class="form-group col-md-12">						
+							<label><abbr title="Entidad Territorial Certificada">ETC:</abbr></label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-map-pin fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text" value="Gobernación del Valle">
+							</div>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar()">Guardar</a>					
+					</div>					
+
+					<div class="row" id="oculto">
+						<div class="form-group col-md-8">						
+							<label>Sede:</label>					
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-building fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Sede" required>				
+							</div>
+							<small>Ingrese la sede de la Institución Educativa donde realizó la visita</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>No Contrato/Convenio:</label>					
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-book fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number"  placeholder="No Contrato/Convenio">				
+							</div>
+							<small>Ingrese el Número de contrato asignado a la Institución Educativa</small>
+						</div>
+
+						<div class="form-group col-md-3">						
+							<label>Ciudad / Municipio:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Ciudad o Municipio" required>					      	
+							</div>
+							<small>Ingrese la Ciudad/Municipio donde realizó la visita</small>
+						</div>
+
+						<div class="form-group col-md-6">						
+							<label>Dirección:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-map-signs fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text" placeholder="Dirección" required>
+							</div>
+							<small>Ingrese la dirección de la Institución Educativa donde realizó la visita</small>
+						</div>
+
+						<div class="form-group col-md-3">						
+							<label>Teléfono de contacto:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-phone fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="tel"  placeholder="Teléfono">
+							</div>
+							<small>Ingrese el teléfono del encargado en la Institución Educativa</small>
+						</div>	
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar2()">Guardar</a>					
+					</div>	
+
+					<div class="row" id="oculto2">	
+						<div class="form-group col-md-4">						
+							<label>Fecha de visita:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="date"  placeholder="Fecha de visita" required>					      	
+							</div>
+							<small>Ingrese la fecha de cuando realizó la visita</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Hora de inicio:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="time"  placeholder="Hora de Inicio" required>
+							</div>
+							<small>Ingrese la hora en la que comenzó la visita</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Hora de Terminación:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="time"  placeholder="Hora de Terminación" required>
+							</div>
+							<small>Ingrese la hora en la que terminó la visita</small>
+						</div>	
+						
+						<div class="form-group col-md-4">						
+							<label>Operador:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-suitcase fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Operador encargado" required>					      	
+							</div>
+							<small>Ingrese el operador encargado:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Modalidad:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-cutlery fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" placeholder="Modalidad" required>
+									<option>Preparado en Sitio</option>
+									<option>Ración Industrializada</option>
+									<option>Enfoque Diferencial</option>
+						      	</select>
+							</div>
+							<small>Ingrese la modalidad atendida:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>No titulares de derecho atendidos:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-group fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number"  placeholder="No titulares de derecho atendidos:" required>
+							</div>
+							<small>Ingrese el Número de titulares de derecho atendidos::</small>
+						</div>
+						
+						<div class="form-group col-md-6">						
+							<label>Objeto de la visita:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-eye fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" required>
+									<option>Visita técnica (Interventoria)</option>	
+									<option>Visita verificación de ETA</option>
+									<option>Visita SPQR</option>
+						      	</select>					      	
+							</div>
+							<small>Seleccione el objeto la visita:</small>
+						</div>
+
+						<div class="form-group col-md-6">						
+							<label>Visita No.:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-list-ol fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" required>
+									<option>1a Visita</option>	
+									<option>2a Visita</option>
+									<option>3a Visita</option>
+						      	</select>					      	
+							</div>
+							<small>Seleccione el número de la visita:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Total manipuladoras:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-hashtag fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" required>
+									<option>De 1 a 75 raciones</option>
+									<option>De 76 a 150 raciones</option>
+									<option>De 151 a 300 raciones</option>
+									<option>De 301 a 500 raciones</option>
+									<option>De 501 a 750 raciones</option>
+									<option>De 751 a 1000 raciones</option>
+									<option>De 1001 a 1500 raciones</option>
+						      	</select>					      	
+							</div>
+							<small>Seleccione el total manipuladoras:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Resolución 16432 del 2 de octubre 2015:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-list-alt fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" required>
+									<option>1</option>	
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+						      	</select>					      	
+							</div>
+							<small>Seleccione el número de la visita:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>No. de manipuladoras encontradas:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-search fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number"  placeholder="Número de manipuladoras encontradas" required>					      	
+							</div>
+							<small>Número de manipuladoras encontradas en la visita:</small>
+						</div>
+						
+						<div class="form-group col-md-6">						
+							<label>Nombre quien atiende la visita:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Nombre quien atiende la visita" required>					      	
+							</div>
+							<small>Nombre quien atiende la visita:</small>
+						</div>
+
+						<div class="form-group col-md-3">						
+							<label>Cargo:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-vcard-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Cargo quien atiende la visita" required>
+							</div>
+							<small>Cargo quien atiende la visita:</small>
+						</div>
+
+						<div class="form-group col-md-3">						
+							<label>Teléfono de contacto:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-mobile fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="tel"  placeholder="Teléfono">
+							</div>
+							<small>Ingrese el número de teléfono de quien atiende la visita</small>
+						</div>
+						
+						<div class="form-group col-md-6">						
+							<label>Nombre quien realiza la visita:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Nombre quien realiza la visita" required>					      	
+							</div>
+							<small>Nombre quien realiza la visita:</small>
+						</div>
+
+						<div class="form-group col-md-6">						
+							<label>Cargo:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-vcard-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="text"  placeholder="Cargo quien realiza la visita" required>
+							</div>
+							<small>Cargo quien realiza la visita:</small>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar3()">Guardar</a>											
+					</div>
+
+					<div class="row" id="oculto3">	
+						<div class="form-group col-md-4">						
+							<label>ÚLTIMA VISITA AUTORIDAD SANITARIA:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" required>
+									<option>Si</option>
+									<option>No</option>
+						      	</select>					      	
+							</div>
+							<small>Responda si/no se realizó visita sanitaria:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>FECHA DE VISITA SANITARIA:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="date"  placeholder="Fecha de la visita">					      	
+							</div>
+							<small>Ingrese fecha de la visita:</small>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>CONCEPTO EMITIDO:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control" required>
+									<option>FAVORABLE</option>	
+									<option>FAVORABLE CONDICIONADO</option>
+									<option>PENDIENTE</option>
+									<option>DESFAVORABLE</option>
+						      	</select>					      	
+							</div>
+							<small>Seleccione el concepto emitido:</small>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar4()">Guardar</a>
+					</div>
+
+					<div class="row" id="oculto4">
+
+						<h1>FORMATO DE VERIFICACIÓN PARA COMEDORES ESCOLARES DEL PROGRAMA DE ALIMENTACIÓN ESCOLAR - PAE</h1>	
+
+						
+						<div class="table-responsive">
+
+							<table class="table-hover">  
+
+								<legend>I. INSTALACIONES FÍSICAS Y SANITARIAS</legend>	
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td>OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>
+								
+								<tr>
+									<td>1</td>
+									<td>PS<br> ED</td>
+									<td>El comedor escolar está ubicado en un lugar alejado de focos de insalubridad, maleza y aguas estancadas.</td>
+									<td>
+										<input list="valor" class="form-control">
+										<datalist id="valor">
+				  							<option>0</option>
+				  							<option>1</option>
+				  							<option>NA</option>
+				  							<option>NO</option>  							
+										</datalist>
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>2</td>
+									<td>PS</td>
+									<td>El comedor escolar cuenta con acceso a servicios sanitarios, en cantidad suficiente, en buen estado y funcionamiento.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>3</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>La edificación, las instalaciones (área de almacenamiento, área de preparación, área de consumo) están construidos de manera que facilita la operación de limpieza, desinfección y desinfectación.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>4</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los techos están diseñados y construidos de manera que se evita acumulación de suciedad, condensación, formación de hongos y mohos, se encuentran limpios y se realiza mantenimiento para garantizar condiciones higiénico- sanitarias.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>				
+
+								<tr>
+									<td>5</td>
+									<td>PS<br> RI</td>
+									<td>El área de distribución o de alistamiento de las raciones preparadas o industrializadas cumple con las condiciones higiénico sanitarias.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>6</td>
+									<td>PS</td>
+									<td>Las paredes están construidas en material resistente, impermeable, no absorbente, de fácil limpieza y desinfección.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>7</td>
+									<td>PS<br> ED</td>
+									<td>Existen tanques y/o recipientes de almacenamiento de agua protegidos con tapa, con la capacidad suficiente para atender como mínimo las necesidades correspondientes a un día de preparación.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>8</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El área de almacenamiento de las materias primas y producto terminado (Productos industrializados) del comedor escolar cumple con el espacio mínimo que garantice la conservación de los alimentos y/o productos.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>9</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Existe un espacio físico exclusivo para el depósito temporal de los residuos sólidos, adecuadamente ubicado, protegido y en adecuado estado de mantenimiento.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>10</td>
+									<td>PS<br> ED</td>
+									<td>Las lámparas o iluminación se encuentran protegidas y funcionando y no se evidencian instalaciones eléctricas expuestas.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>11</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los sifones y drenajes, se encuentran en buen estado, protegidos (rejilla), funcionando y limpios.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>	
+
+								<tr>
+									<td>12</td>
+									<td>PS<br> ED</td>
+									<td>Cuenta con área exclusiva para la limpieza y desinfección de los utensilios y menaje evitando contaminación cruzada.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>13</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Las ventanas y aberturas que se comuniquen con el ambiente exterior, están provistas con malla antiinsecto de fácil limpieza y buena conservación, resistentes a la limpieza y la manipulación. Los vidrios de las ventanas ubicados en áreas de proceso cuentan con protección para evitar contaminación en caso de ruptura.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+									</td>
+								</tr>
+
+								<tr>
+									<td>14</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los pisos se encuentran limpios, en buen estado y se realiza mantenimiento para garantizar condiciones higiénico-sanitarias.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>15</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se evidencia dotación de los elementos de higiene personal (jabón desinfectante, elementos desechables, papel higiénico y papeleras) y las instalaciones sanitarias se encuentran en buen estado.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+							
+								<tr>
+									<td>16</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Existen letreros en buen estado alusivos a la aplicación de BPM - Buenas Prácticas de Manufactura, ubicados en las instalaciones del comedor escolar.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td>
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar5()">Guardar</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+					</div>
+
+					<div class="row" id="oculto5">
+
+						<div class="table-responsive">
+
+							<legend>II. ALMACENAMIENTO MATERIAS PRIMAS E INSUMOS  Y PRODUCTO TERMINADO</legend>					
+								<table class="table-hover">
+									
+									<thead>	
+										<tr>
+											<td>ÍTEM</td>
+											<td></td>
+											<td>ASPECTO A EVALUAR</td>
+											<td>PUNTAJE</td>
+											<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+										</tr>
+									</thead>					
+
+									<tr>
+										<td>17</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>El almacenamiento de los insumos, materias primas o productos terminados se realiza ordenadamente en pilas o estibas (canecas con tapa u otra forma de almacenamiento) y dispone estanterías de material sanitario, limpias y en buen estado de manera que se permita la inspección, limpieza y fumigación, si es el caso.</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>18</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>Los productos se encuentran dentro de su vida útil, con fecha de vencimiento vigente, no presentan algún tipo de contaminación y son aptos para el consumo.</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>19</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>Se tiene actualizado el control de entradas y salidas, Kárdex y rotación de productos - PEPS.</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>20</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>El almacenamiento de los alimentos refrigerados se realiza a temperaturas entre -2°C a 4°C y se llevan registros </td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>21</td>
+										<td>PS<br> ED</td>
+										<td>El almacenamiento de alimentos congelados se realiza a temperaturas de -18°C y se llevan registros</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>22</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>Los productos que se encuentran empacados y rotulados, cumplen con la normatividad sanitaria vigente. Resolución 5109/2005</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar6()">Guardar</a>
+									</td>
+									</tr>
+
+								</table>							
+						</div>						
+					</div>
+
+					<div class="row" id="oculto6">
+						<div class="table-responsive">
+							<legend>III. CONDICIONES  DE PREPARACIÓN</legend>
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>				
+
+								<tr>
+									<td>23</td>
+									<td>PS<br>ED</td>
+									<td>Los procesos de preparación de los alimentos se realizan en condiciones óptimas de higiene, de limpieza y de conservación, de forma secuencial y continua para evitar cualquier tipo de contaminación.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>				
+
+								<tr>
+									<td>24</td>
+									<td>PS<br>ED</td>
+									<td>Se realiza la limpieza y desinfección de los utensilios de manera permanente posterior al cambio de alimentos por cada proceso. La desinfección debe realizarse mediante la utilización de agua caliente, vapor de agua o sustancias químicas autorizadas para este efecto.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>25</td>
+									<td>PS<br>ED</td>
+									<td>El servido de los alimentos se hace con utensilios (pinzas, cucharas, etc.) según sea el tipo de alimento y se evita el contacto directo del alimento con las manos.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>	
+
+								<tr>
+									<td>26</td>
+									<td>PS</td>
+									<td>Se cuentan con registros y control de temperatura durante la preparación. El producto terminado se sirve a temperatura mayor a 60°C y los alimentos refrigerados no mayor a 4°C.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar7()">Guardar</a>
+									</td>
+								</tr>
+
+							</table>
+							
+						</div>
+						
+					</div>
+
+					<div class="row" id="oculto7">
+						<div class="table-responsive">
+							<legend>IV. CUMPLIMIENTO DE  MENÚS -  GRAMAJES</legend>		
+				
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>								
+
+								<tr>
+									<td>27</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>En el establecimiento educativo se encuentra publicado el ciclo de menú aprobado por la ETC - Para enfoque diferencial debe estar publicado en la lengua de la comunidad étnica</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>28</td>
+									<td>PS<br> ED</td>
+									<td>Se tienen estandarizados los utensilios para el servido.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>	
+
+								<tr>
+									<td>29</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Existe cumplimiento de la minuta de acuerdo al ciclo de menú establecido. (Si es caso contrario, presentar el soporte de autorización por parte de la ETC del cambio realizado).</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>30</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se cumple con los gramajes de las preparaciones y o complementos industrializados según aplique.</td>
+									<td>
+										<input list="valor" class="form-control">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar8()">Guardar</a>
+									</td>
+								</tr>
+
+							</table>
+							
+						</div>
+					</div>
+
+					<div class="row" id="oculto8">
+						<div class="table-responsive">
+							<legend>V. PERSONAL MANIPULADOR DE ALIMENTOS</legend>		
+				
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>
+
+								<tr>
+									<td>31</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El personal manipulador utiliza la dotación completa, en buen estado, de color claro y cumple con las especificaciones de la normatividad legal vigente y/o elementos de protección necesarios para ración industrializada.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>32</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>La presentación personal de los manipuladores es adecuada (uñas cortas, limpias y sin esmalte, cabello recogido, sin uso de joyas u otros accesorios ni maquillaje) y uniforme limpio</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>33</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se evidencia para cada uno de los manipuladores certificación médica (apto para manipular alimentos) (no mayor a un año).</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>34</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El personal manipulador acredita formación en educación sanitaria, principios básicos de Buenas Prácticas de Manufactura y prácticas higiénicas en manipulación de alimentos (no mayor a un año) y se cuenta con registros de capacitación.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>35</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El personal ajeno al comedor escolar ingresa con la debida dotación (tapabocas, cofia y bata).</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>	
+
+								<tr>
+									<td>36</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se garantiza la cantidad de manipuladores de alimentos de acuerdo a lo establecido en la resolución vigente (Nota: Para ración industrializada en cada IE con menos de 49 titulares de derecho puede existir persona delegada por el rector)</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>37</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El complemento alimentario es entregado en el horario establecido de acuerdo a la resolución vigente o acorde a la autorización realizada por parte del comité de alimentación escolar</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar9()">Guardar</a>
+									</td>
+								</tr>
+
+							</table>
+						</div>						
+					</div>
+
+					<div class="row" id="oculto9">
+						<div class="table-responsive">
+
+							<legend>VI. CONDICIONES DE SANEAMIENTO</legend>		
+				
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>	
+											
+								<tr>
+									<td>38</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se cuenta con un programa de limpieza y desinfección, con procedimientos escritos, se llevan registros de las actividades.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>39</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se utilizan productos de limpieza y desinfección y cuentan con fichas técnicas (concentraciones, modo de preparación, empleo y  rotación).</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>40</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Las materias primas crudas tales como carnes, verduras, hortalizas y frutas se lavan y/o desinfectan antes de su preparación o consumo en ración industrializada.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>41</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los productos de aseo se almacenan en un sitio ventilado, identificado, protegido y se encuentran debidamente rotulados y organizados.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="6" id="ini">ABASTECIMIENTO DE AGUA</td>
+								</tr>
+
+								<tr>
+									<td>42</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se garantiza la limpieza y desinfección periódica del tanque y/o recipiente (s) de almacenamiento de agua.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>43</td>
+									<td>PS<br> ED</td>
+									<td>Existe un programa implementado de limpieza y desinfección de tanques y/o recipientes , con procedimientos escritos, se llevan registros de las actividades.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>44</td>
+									<td>PS</td>
+									<td>El agua que se utiliza es potable y cumple con las normas vigentes establecidas por la reglamentación correspondiente del Ministerio de Salud y se evidencia soporte</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>45</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El uso de hielo en contacto con los alimentos y materias primas, es fabricado con agua potable y manipulado en condiciones que garanticen su inocuidad.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="6" id="ini">MANEJO Y DISPOSICIÓN DE RESIDUOS SÓLIDOS Y LÍQUIDOS</td>
+								</tr>
+
+								<tr>
+									<td>46</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se cuenta con recipientes suficientes, identificados, de material sanitario, con tapa y bolsa plástica, ubicados en un sitio exclusivo para la recolección temporal de residuos sólidos y se promueve el reciclaje.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>47</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se cuenta con un programa de manejo de residuos, con procedimientos escritos, se llevan registros de las actividades.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>48</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se aplica la separación en sitio de los residuos sólidos, es decir, material orgánico separado de papel, plásticos y empaques.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="6" id="ini">CONTROL DE PLAGAS (ARTROPODOS, ROEDORES, AVES)</td>
+								</tr>
+
+								<tr>
+									<td>49</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Las instalaciones y/o los alimentos se encuentran libres de presencia o daño causado por plagas.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>50</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se cuenta con un programa de control integrado de plagas, con procedimientos escritos y se llevan registros de las actividades preventivas o correctivas.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar10()">Guardar</a>
+									</td>
+								</tr>
+
+							</table>
+							
+						</div>
+					</div>
+
+					<div class="row" id="oculto10">
+						<div class="table-responsive">
+							<legend>VII. CONDICIONES DE TRANSPORTE (SI ES EVIDENCIADO)</legend>		
+				
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>
+
+								<tr>
+									<td>51</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El transporte garantiza el mantenimiento de las condiciones de conservación requeridas para la materia prima: refrigeración, congelación, recipientes o canastillas de material sanitario con tapa, etc. y cumple con la normatividad vigente. (Si aplica)</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>	
+
+								<tr>
+									<td>52</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los vehículos se encuentran en adecuadas condiciones sanitarias, de aseo y operación para el transporte de los alimentos. (Si aplica)</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>53</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los vehículos son utilizados exclusivamente para el transporte de alimentos y llevan el aviso de transporte de alimentos. (Si Aplica)</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>	
+
+								<tr>
+									<td>54</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los complementos alimentarios son transportados en canastillas plásticas, debidamente lavadas y desinfectadas.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>		
+
+								<tr>
+									<td>55</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El personal transportador cuenta con certificación de manipulación de alimentos y vestimenta adecuada de acuerdo a la normatividad vigente.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>56</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Los vehiculos de transporte no almacenan los alimentos directamente sobre el piso. Se utilizan los recipientes, canastillas, o implementos de material adecuado como estibas plasticas, de manera que aíslen el producto de toda posibilidad de contaminación.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar11()">Guardar</a>
+									</td>
+								</tr>
+
+							</table>
+							
+						</div>
+					</div>
+
+					<div class="row" id="oculto11">
+						<div class="table-responsive">
+							<legend>VIII. EQUIPOS Y UTENSILIOS</legend>		
+				
+								<table class="table-hover">
+									
+									<thead>
+										<tr>
+											<td>ÍTEM</td>
+											<td></td>
+											<td>ASPECTO A EVALUAR</td>
+											<td>PUNTAJE</td>
+											<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+										</tr>
+									</thead>				
+
+									<tr>
+										<td>57</td>
+										<td>PS<br> ED</td>
+										<td>Los utensilios tales como tablas, cucharas, ollas y demás menaje están fabricados con materiales sanitarios, resistentes a la corrosión de fácil limpieza y desinfección.</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>58</td>
+										<td>PS<br> ED</td>
+										<td>Los recipientes donde se les provee los alimentos a los titulares de derecho son de material lavable y fácil desinfección</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>59</td>
+										<td>PS<br> ED</td>
+										<td>El equipo y menaje con que cuenta el comedor escolar es suficiente para la atención de la totalidad de titulares de derecho.</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>60</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>Existen manuales y registros para servicio de mantenimiento preventivo y correctivo de equipos de acuerdo a lo establecido en la resoución. (Hoja de vida de los equipos, cronogramas de mantenimiento, responsables)</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+										<td>61</td>
+										<td>PS<br> RI<br> ED</td>
+										<td>Las neveras, congeladores y demás equipos de almacenamiento cuentan con controles y registro de temperatura.</td>
+										<td>
+											<input class="form-control" list="valor">
+										</td>
+										<td colspan="2">
+											<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+																</td>
+									</tr>
+
+									<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar12()">Guardar</a>
+									</td>
+									</tr>
+
+								</table>
+						</div>
+					</div>
+
+					<div class="row" id="oculto12">
+						<div class="table-responsive">
+
+							<legend>X. SALUD OCUPACIONAL</legend>		
+							
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>
+
+								<tr>
+									<td>62</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Existen extintores de incendios con fechas vigentes de recarga</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>63</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Existe botiquín de primeros auxilios que cumple con lo establecido en la normatividad vigente.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea class="form-control" rows="3" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar13()">Guardar</a>
+									</td>
+								</tr>
+							
+							</table>
+							
+						</div>
+					</div>
+
+					<div class="row" id="oculto13">
+						<div class="table-responsive">
+
+							<legend>XI. GESTIÓN SOCIAL</legend>		
+				
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td>ÍTEM</td>
+										<td></td>
+										<td>ASPECTO A EVALUAR</td>
+										<td>PUNTAJE</td>
+										<td colspan="2">OBSERVACIONES (Describir la acción correctiva o acción de mejora)</td>
+									</tr>
+								</thead>	
+
+								<tr>
+									<td>64</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>El comedor escolar tiene publicado en un lugar visible la Ficha Técnica de Información del PAE.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>65</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Se evidencia soporte de conformación del comité de alimentación escolar y/o actas de reunión del mismo.</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>66</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Es visible el mecanismo que el operador y la ETC tienen para atender las SPQR en el comedor escolar</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>67</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Tiene conformado el Comité de Alimentación Escolar - CAE</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td>68</td>
+									<td>PS<br> RI<br> ED</td>
+									<td>Existe participación de veeduria ciudadana en la IE</td>
+									<td>
+										<input class="form-control" list="valor">
+									</td>
+									<td colspan="2">
+										<textarea rows="3" class="form-control" placeholder="Describir la acción correctiva o acción de mejora"></textarea>
+															</td>
+								</tr>
+
+								<tr>
+									<td colspan="5">
+										<a class="btn col-md-4" href="#" role="button" onclick="mostrar14()">Guardar</a>
+									</td>
+								</tr>
+
+							</table>							
+						</div>
+					</div>
+
+					<div class="row" id="oculto14">
+						<div class="form-group col-md-12">						
+							<label>CONCLUSIONES/ OBSERVACIONES/ RECOMENDACIONES</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-comment fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<textarea class="form-control" rows="4" placeholder="CONCLUSIONES/OBSERVACIONES/RECOMENDACIONES"></textarea>
+						  </div>
+						</div>
+
+						<div class="form-group col-md-12">						
+							<label>OBSERVACIONES DE QUIEN RECIBE LA VISITA</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-commenting fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<textarea class="form-control" rows="4" placeholder="OBSERVACIONES DE QUIEN RECIBE LA VISITA"></textarea>
+							</div>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar15()">Guardar</a>					
+					</div>
+
+					<div class="row" id="oculto15">
+
+						<h1>FORMATO DE VERIFICACIÓN GRAMAJES PARA COMEDORES ESCOLARES DEL PROGRAMA DE ALIMENTACIÓN ESCOLAR - PAE</h1>
+
+						<div class="form-group col-md-4">						
+							<label>Instrumento:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>Balanza</option>
+									<option>Gramera</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Marca:</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-registered fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>--Seleccionar--</option>
+									<option>TEXON</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Fecha de última calibración:</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="date"  placeholder="Fecha de calibración">
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Número de menú programado</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-list fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number" placeholder="Número de menú programado">
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Se presentaron intercambios</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>SI</option>
+									<option>NO</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Alimentos a entregar de acuerdo al menú programado</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-cutlery fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number">
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Número de menú entregado</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-list fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number" placeholder="Número de menú entregado">
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Presentaron soporte de autorización</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>SI</option>
+									<option>NO</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-4">						
+							<label>Alimentos verificados en la visita de acuerdo al menú programado</label>
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-eye fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<input class="form-control" type="number">
+							</div>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar16()">Guardar</a>
+						
+					</div>
+
+					<div class="row" id="oculto16">
+							
+						<div class="row">	
+							<div class="form-group col-md-6">						
+								<label>GRUPO DE EDAD</label>	
+								<div class="input-group">
+							      	<div class="input-group-addon">
+										<span><i class="fa fa-edit fa-lg" aria-hidden="true"></i></span>
+							      	</div>
+							      	<select class="form-control">
+										<option>4-6 años 11 meses</option>
+										<option>7-12 años 11 meses</option>
+										<option>13-17 años 11 meses</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group col-md-6">						
+								<label>Tipo de complemento entregado</label>	
+								<div class="input-group">
+							      	<div class="input-group-addon">
+										<span><i class="fa fa-edit fa-lg" aria-hidden="true"></i></span>
+							      	</div>
+							      	<select class="form-control" id="gram" onchange="revelar()">
+										<option>--Seleccionar--</option>
+										<option name="ps">Ración para preparar en sitio - complemento alimentario AM/PM</option>
+										<option name="psa">Ración para preparar en sitio - complemento alimentario almuerzo</option>
+										<option name="ri">Industrializado</option>
+									</select>
+								</div>
+							</div>
+						</div>					
+					
+						<div class="row" id="ps">
+
+							<div class="table-responsive">
+
+								<table class="table-hover">
+
+									<thead>	
+
+										<tr>
+											<td colspan="7">Ración para preparar en sitio - complemento alimentario jornada mañana – complemento alimentario jornada tarde</td>
+										</tr>
+
+										<tr>	
+											<td>Componente</td>
+											<td>Preparación</td>
+											<td>Muestra 1</td>
+											<td>Muestra 2</td>
+											<td>Muestra 3</td>
+											<td>Peso esperado</td>	
+											<td>Concepto</td>								
+										</tr>
+
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>Lácteo</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">
+												<datalist id="concepto">
+						  							<option>Cumple</option>
+						  							<option>No cumple</option>				  							  							
+												</datalist>
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Proteíco</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Cereal acompañante</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Fruta</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+									</tbody>
+										
+								</table>
+							</div>
+						</div>
+
+						<div class="row" id="psa">	
+
+							<div class="table-responsive">
+								
+								<table class="table-hover">	
+									
+									<thead>
+										<tr>
+											<td colspan="7">Ración para preparar en sitio – Almuerzo</td>
+										</tr>
+
+										<tr>	
+											<td>Componente</td>
+											<td>Preparación</td>
+											<td>Muestra 1</td>
+											<td>Muestra 2</td>
+											<td>Muestra 3</td>
+											<td>Peso esperado</td>	
+											<td>Concepto</td>								
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>Proteíco</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Cereal acompañante</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Tubérculo, raíces, plátanos</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Verdura fria o caliente</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Fruta</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Lácteo</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+									</tbody>
+
+								</table>
+
+							</div>
+						</div>					
+
+						<div class="row" id="ri">	
+
+							<div class="table-responsive">		
+									
+								<table class="table-hover">
+
+									<thead>
+										<tr>
+											<td colspan="7">Ración industrializada</td>
+										</tr>
+
+										<tr>	
+											<td>Componente</td>
+											<td>Preparación</td>
+											<td>Muestra 1</td>
+											<td>Muestra 2</td>
+											<td>Muestra 3</td>
+											<td>Peso esperado</td>	
+											<td>Concepto</td>								
+										</tr>
+									</thead>
+									
+									<tbody>	
+
+										<tr>
+											<td>Lácteo</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Derivados del cereal</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Frutas</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Azúcares y dulces</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td>Queso</td>
+											<td><input class="form-control" type="text"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td><input class="form-control" type="number"></td>
+											<td>
+												<input class="form-control" list="concepto">										
+											</td>									
+										</tr>
+
+										<tr>
+											<td colspan="7"><a class="btn" href="#" role="button" onclick="mostrar17()">Guardar</a></td>								
+										</tr>
+									</tbody>	
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="row" id="oculto17">	
+
+						<div class="form-group col-md-12">						
+							<label>OBSERVACIONES</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-commenting fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<textarea class="form-control" rows="4" placeholder="OBSERVACIONES"></textarea>
+							</div>
+							<small>Ingrese sus observaciones:</small>
+						</div>
+
+						<div class="form-group col-md-6">						
+							<label>Hace parte la Bienestarina de las preparaciones</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>SI</option>
+									<option>NO</option>									
+								</select>
+							</div>
+
+							<label>Se realizaron cambios en el menú?</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>SI</option>
+									<option>NO</option>									
+								</select>
+							</div>
+
+							<label>Los cambios están aprobados por la ETC?</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<select class="form-control">
+									<option>SI</option>
+									<option>NO</option>									
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group col-md-6">						
+							<label>Especifique en cuales preparaciones</label>	
+							<div class="input-group">
+						      	<div class="input-group-addon">
+									<span><i class="fa fa-edit fa-lg" aria-hidden="true"></i></span>
+						      	</div>
+						      	<textarea class="form-control" rows="4" placeholder="Especifique cuales preparaciones"></textarea>
+							</div>
+						</div>
+
+						<a class="btn col-md-4" href="#" role="button" onclick="mostrar18()">Guardar</a>
+						
+					</div>
+
+					<div class="row" id="oculto18">
+
+						<h1>NÚMERO DE COMPLEMENTOS NUTRICIONALES ENTREGADOS</h1>
+
+						<div class="table-responsive">
+							
+							<table class="table-hover">
+								
+								<thead>
+									<tr>
+										<td rowspan="2">
+											GRADO
+										</td>
+
+										<td rowspan="2">
+											NÚMERO DE ESTUDIANTES ASISTENTES
+										</td>
+
+										<td colspan="3">
+											NÚMERO DE COMPLEMENTOS ENTREGADOS
+										</td>
+
+										<td rowspan="2">
+											NOMBRE DEL ENCARGADO
+										</td>
+
+										<td rowspan="2">
+											CARGO
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											AM
+										</td>
+
+										<td>
+											FM
+										</td>
+
+										<td>
+											ALMUERZO
+										</td>									
+									</tr>
+								</thead>	
+
+								<tbody>
+
+									<tr>
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="text" required>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											TOTALES
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td colspan="2"></td>
+									</tr>	
+
+									<tr>
+										<td colspan="7">	
+											<label>OBSERVACIONES</label>
+											<textarea class="form-control" rows="4" placeholder="OBSERVACIONES"></textarea>
+										</td>														
+									</tr>
+
+									<tr>
+										<td colspan="7"><a class="btn col-md-4" href="#" role="button" onclick="mostrar19()">Guardar</a></td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row" id="oculto19">
+
+						<h1>Formato único - Equipo de cocina minimo - Ración preparada en sitio - Complemento alimentario jornada mañana y jornada tarde (C-AM/PM) - Almuerzo</h1>
+
+						<div class="table-responsive">
+							
+							<table class="table-hover">
+
+							<thead>
+								<tr id="ini">
+									<td>
+										N°
+									</td>
+
+									<td>
+										Equipo
+									</td>
+
+									<td>
+										Cantidad
+									</td>
+
+									<td>
+										Estado
+									</td>
+
+									<td>
+										Tipo complemento
+									</td>
+								</tr>
+							</thead>
+
+							<tbody>					
+								<tr>
+									<td>
+										1
+									</td>
+
+									<td>
+										Estufa de gas lineal de tres quemadores
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										<datalist id="estado">
+				  							<option>Bueno</option>
+				  							<option>Regular</option>
+				  							<option>Malo</option>  							
+										</datalist>
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										2
+									</td>
+
+									<td>
+										Estufa enana- Un quemador grande
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										3
+									</td>
+
+									<td>
+										Pipeta de gas de acuerdo de acuerdo a la capacidad del servicio
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										4
+									</td>
+
+									<td>
+										Regulador de gas
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										5
+									</td>
+
+									<td>
+										Manguera de gas
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										6
+									</td>
+
+									<td>
+										Nevera de 336 litros o 12 pies
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										7
+									</td>
+
+									<td>
+										Nevera de 512 litros o 19 pies
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										8
+									</td>
+
+									<td>
+										Licuadora industrial 
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										9-13
+									</td>
+
+									<td>
+										Balanza de 25 libras mecánica 
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										10-14
+									</td>
+
+									<td>
+										Balanza Romana 20 libras
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										11-15
+									</td>
+
+									<td>
+										Balanza Gramera de mesa, máximo de 10 gr de sensibilidad Mecánica o digital
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										12-17
+									</td>
+
+									<td>
+										Termómetro de punzón análogo o digital uno para temperatura de frío y otro para caliente
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(C-AM/PM)-(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										8
+									</td>
+
+									<td>
+										Congelador 1 puerta 5 pies- Capacidad 30 kilos
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										9
+									</td>
+
+									<td>
+										Congelador 1 puerta 7 pies- Capacidad 45 kilos
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										10
+									</td>
+
+									<td>
+										Congelador 1 puerta 15 pies- Capacidad 70 kilos
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										11
+									</td>
+
+									<td>
+										Licuadora no industrial
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										12
+									</td>
+
+									<td>
+										Licuadora industrial 4 litros
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										16
+									</td>
+
+									<td>
+										Molino con motor 1 H.P
+									</td>
+
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">
+										
+									</td>
+
+									<td>
+										(ALMUERZO)
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="5"><a class="btn col-md-4" href="#" role="button" onclick="mostrar20()">Guardar</a></td>
+								</tr>
+
+							</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row" id="oculto20">
+						<div class="table-responsive">
+							<table class="table-hover">
+								<thead>
+									<tr id="ini">
+										<td>
+											N°
+										</td>
+
+										<td>
+											Equipo
+										</td>
+
+										<td>
+											Cantidad
+										</td>
+
+										<td>
+											Estado
+										</td>
+
+										<td>
+											Tipo complemento
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											1
+										</td>
+
+										<td>
+											Balde Plástico
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											2
+										</td>
+
+										<td>
+											Bandeja Plástica
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											3
+										</td>
+
+										<td>
+											Caldero
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											4
+										</td>
+
+										<td>
+											Canastilla Plástica
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											5
+										</td>
+
+										<td>
+											Cernidor aluminio
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											6
+										</td>
+
+										<td>
+											Olleta
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											7-8
+										</td>
+
+										<td>
+											Cuchara para servir (aluminio fundido) con hueco
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											8-9
+										</td>
+
+										<td>
+											Cuchara para servir (aluminio fundido) sin hueco
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											9
+										</td>
+
+										<td>
+											Cuchillo para cortar
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											10-14
+										</td>
+
+										<td>
+											Jarra Plástica
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											11-16
+										</td>
+
+										<td>
+											Olla (aluminio recortado) 32 o 24 lt
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											12-17
+										</td>
+
+										<td>
+											Olla (aluminio recortado) 36 lts
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											13-18
+										</td>
+
+										<td>
+											Olla (aluminio recortado) 40 o 50 lts
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											14-20
+										</td>
+
+										<td>
+											Paila 46cm
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											15-21
+										</td>
+
+										<td>
+											Pinzas
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											16-27
+										</td>
+
+										<td>
+											Cucharones y cucharas medidoras
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											17-28
+										</td>
+
+										<td>
+											Vasos medidores y probeta
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(C-AM/PM)-(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											7
+										</td>
+
+										<td>
+											Colador Plástico
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											10
+										</td>
+
+										<td>
+											Cuchillo cocina para cortar carne
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											11
+										</td>
+
+										<td>
+											Cuchillo cocina para cortar verdura
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											12
+										</td>
+
+										<td>
+											Cuchillo cocina para pelar papa
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											13
+										</td>
+
+										<td>
+											Espumadera de aluminio fundido
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											15
+										</td>
+
+										<td>
+											Legumbrera
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											19
+										</td>
+
+										<td>
+											Olla a présion
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											22
+										</td>
+
+										<td>
+											Rallador de acero inoxidable
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											23
+										</td>
+
+										<td>
+											Tabla acrílica para picar grande
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											24
+										</td>
+
+										<td>
+											Tabla acrílica para picar mediana
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											25
+										</td>
+
+										<td>
+											Tabla acrílica para picar pequeña
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											26
+										</td>
+
+										<td>
+											Taja papa
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">									
+										</td>
+
+										<td>
+											(ALMUERZO)
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="5"><a class="btn col-md-4" href="#" role="button" onclick="mostrar21()">Guardar</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row" id="oculto21">
+
+						<h1>Dotación y menaje de comedor- complemento alímentario jornada mañana y jornada tarde y almuerzo para Ración preparada en sitio</h1>
+
+						<div class="table-responsive">
+							<table class="table-hover">
+
+								<thead>
+									<tr id="ini">
+										<td>
+											N°
+										</td>
+
+										<td>
+											Equipo
+										</td>
+
+										<td>
+											Cantidad
+										</td>
+
+										<td>
+											Estado
+										</td>
+									</tr>
+								</thead>
+
+								<tbody>
+								
+								<tr>
+									<td>
+										1
+									</td>
+
+									<td>
+										Tenedor de mesa
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>	
+
+								<tr>
+									<td>
+										2
+									</td>
+
+									<td>
+										Cuchara sopera
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										3
+									</td>
+
+									<td>
+										Platos
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										4
+									</td>
+
+									<td>
+										Pocillo
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										5
+									</td>
+
+									<td>
+										Vaso
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										6
+									</td>
+
+									<td>
+										Tina plástica  mediana
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										7
+									</td>
+
+									<td>
+										Tina plástica grande 
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										8
+									</td>
+
+									<td>
+										Mesas de comedor - puesto para comer
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td>
+										9
+									</td>
+
+									<td>
+										Sillas de comedor - puesto para sentarse
+									<td>
+										<input class="form-control" type="number" required>
+									</td>
+
+									<td>
+										<input class="form-control" list="estado">									
+									</td>
+								</td>
+
+								<tr>
+									<td colspan="5">	
+										<label>OBSERVACIONES</label>
+										<textarea class="form-control" rows="4" placeholder="OBSERVACIONES"></textarea>
+									</td>														
+								</tr>
+
+								<tr>
+									<td colspan="5"><a class="btn col-md-4" href="#" role="button" onclick="mostrar22()">Guardar</a></td>
+								</tr>
+								</tbody>
+								
+							</table>
+						</div>
+					</div>
+
+					<div class="row" id="oculto22">
+
+						<h1>FORMATO DE VERIFICACIÓN DE INVENTARIOS DE COMEDORES ESCOLARES DEL PROGRAMA DE ALIMENTACIÓN ESCOLAR-PAE</h1>
+
+						<div class="table-responsive">
+							<table class="table-hover">
+
+								<thead>
+									<tr id="ini">
+										<td colspan="3">
+											Insumos e implementos de aseo mínimos por Comedor Escolar - Ración preparada en el sitio 
+										</td>
+
+										<td colspan="3">
+											Cumple (1) No cumple (0)
+										</td>
+									</tr>
+
+									<tr id="ini">
+										<td>
+											item
+										</td>
+
+										<td>
+											Producto
+										</td>
+
+										<td>
+											Cantidad
+										</td>
+
+										<td>
+											N° dotación encontrada
+										</td>
+
+										<td>
+											Estado
+										</td>
+
+										<td>
+											Puntaje
+										</td>
+									</tr>									
+								</thead>
+
+								<tbody>
+
+									<tr>
+										<td>
+											1
+										</td>
+
+										<td>
+											Escoba plástica grande
+										</td>
+
+										<td>
+											1
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											<datalist id="valor">
+					  							<option>Bueno</option>
+					  							<option>Regular</option>
+					  							<option>Malo</option>  							
+											</datalist>
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+											<datalist id="puntaje">
+					  							<option>Cumple</option>
+					  							<option>No cumple</option>						
+											</datalist>
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											2
+										</td>
+
+										<td>
+											Trapero de Hilaza, sin goma 
+										</td>
+
+										<td>
+											1
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											3
+										</td>
+
+										<td>
+											Recojedor de basura de plástico
+										</td>
+
+										<td>
+											1
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											4
+										</td>
+
+										<td>
+											Cepillo largo cerdas duras
+										</td>
+
+										<td>
+											1
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											5
+										</td>
+
+										<td>
+											Cepillo de mano cerdas duras
+										</td>
+
+										<td>
+											1
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											6
+										</td>
+
+										<td>
+											Esponja plástica para el lavado de ollas 
+										</td>
+
+										<td>
+											2
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+											
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											7
+										</td>
+
+										<td>
+											Detergente biodegradable para lavado de platos y batería de cocina, desengrasante, con componentes sulfurados, inoloro y biodegradable, en barra, crema polvoo líquido.
+										</td>
+
+										<td>
+											2 kilos/Litros mensuales por cada 100 cupos
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											8
+										</td>
+
+										<td>
+											Esponja abrasiva
+										</td>
+
+										<td>
+											2 unidades mensuales
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											9
+										</td>
+
+										<td>
+											Desinfectante líquido
+										</td>
+
+										<td>
+											2 litros mensuales por cada 100 cupos
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											10
+										</td>
+
+										<td>
+											Jabón para aseo general, inoloro y biodegradable, en polvo o líquido
+										</td>
+
+										<td>
+											2 kilos/Litros mensuales por cada 100 cupos
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											11
+										</td>
+
+										<td>
+											Jabón antibacterial líquido para desinfección de manos,en dispensador y con identificación del producto, inoloro
+										</td>
+
+										<td>
+											300 cc mensuales, por cada manipulador dealimentos
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											12
+										</td>
+
+										<td>
+											Bolsas plásticas biodegradables para los residuosorgánicos e inorgánicos. Su tamaño debe corresponder al tamaño de la caneca específica
+										</td>
+
+										<td>
+											A necesidad de acuerdo a los volúmenes de residuos generados
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											13
+										</td>
+
+										<td>
+											Kit de canecas para manejo de residuos
+										</td>
+
+										<td>
+											2 Canecas por comedor escolar. Material: Polietileno de alta densidad. (verificar colores). Debidamente identificadas, entregadas al inicio del contrato 
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+
+									<tr>
+										<td>
+											14
+										</td>
+
+										<td>
+											Papel higiénico
+										</td>
+
+										<td>
+											Mínimo 1 rollo mensual por cada manipulador de alimentos
+										</td>
+
+										<td>
+											<input class="form-control" type="number" required>
+										</td>
+
+										<td>
+											<input class="form-control" list="estado">
+										</td>
+
+										<td>
+											<input class="form-control" list="puntaje">
+										</td>
+									</tr>
+										
+									<tr>
+										<td colspan="6">Nota: Los implementos deben permanecer en adecuadas condiciones y ser reemplazados cada vez que se requiera o se evidencie su deterioro o desgaste
+										</td>
+									</tr>
+
+									<tr>
+										<td colspan="6">	
+											<label>OBSERVACIONES GENERALES:</label>
+											<textarea class="form-control" rows="4" placeholder="OBSERVACIONES"></textarea>
+										</td>														
+									</tr>
+
+									<tr>
+										<td colspan="6"><a class="btn col-md-4" href="#" role="button" onclick="mostrar23()">Guardar</a></td>
+									</tr>
+								
+								</tbody>
+									
+							</table>
+							
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+		<!--Funciones formularios-->
+    	<script type="text/javascript" src="js/script.js"></script>
+	</body>
+
+</html> 
